@@ -43,7 +43,7 @@ soft link the data from /scratch to run on folder /home/example. **Please make s
 ```
 ln -s /scrach/mydata.fastq.gz /home/example;
 cd /home/example
-singularity run -B ./:/process -B /scratch:/scratch /home/image/ATAC_IAP_v1.00.simg -r PE -g mm10 -o read1.fastq.gz -p read2.fastq.gz
+singularity run -B ./:/process -B /scratch:/scratch /home/image/ATAC_mm10_target_181103.simg -r PE -g mm10 -o read1.fastq.gz -p read2.fastq.gz
 ```
 **parameters:**
 
